@@ -13,9 +13,9 @@
   },
   "production": {
     "username": "root",
-    "password": null,
+    "password": "password",
     "database": "tromazo",
-    "host": "127.0.0.1",
+    "host": "mysql",
     "dialect": "mysql",
     "operatorsAliases": false
   }

@@ -12,4 +12,4 @@ EXPOSE 3000
 
 COPY . .
 
-CMD npm start >> logs
+CMD npm start > logs/service/log
