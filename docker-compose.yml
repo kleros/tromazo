@@ -1,4 +1,4 @@
-version: "2"
+version: '2'
 
 services:
   nginx:
@@ -9,8 +9,8 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./logs/nginx:/var/log/nginx
     ports:
-      - "443:443"
-      - "80:80"
+      - '443:443'
+      - '80:80'
     networks:
       - outside
       - internal
@@ -18,14 +18,14 @@ services:
     build:
       context: ./
     ports:
-      - "3000:3000"
+      - '3000:3000'
     networks:
       - internal
       - outside
     volumes:
       - ./logs/service:/opt/tromazo/logs
   postgresql:
-    image: "docker/postgresql:latest"
+    image: postgresql
     volumes:
       - postgresql_data:/var/lib/postgresql
     networks:

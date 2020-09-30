@@ -7,7 +7,8 @@
     "lint": "prettier . --write && eslint .",
     "test": "babel-tape-runner test/index.js | tap-spec",
     "dev": "babel-node src/index.js",
-    "start": "NODE_ENV=production npm run dev"
+    "start": "NODE_ENV=production npm run dev",
+    "deploy": "rsync --exclude=\"node_modules\" -r . ubuntu@ec2-3-22-70-246.us-east-2.compute.amazonaws.com:/home/ubuntu/tromazo"
   },
   "keywords": [
     "event",
