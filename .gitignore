@@ -1,0 +1,5 @@
+/tromazo.db
+/node_modules/
+/.node-xmlhttprequest-sync-*
+
+/src/.env

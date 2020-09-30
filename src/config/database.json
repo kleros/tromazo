@@ -1,0 +1,22 @@
+{
+  "development": {
+    "database": "tromazo",
+    "dialect": "sqlite",
+    "storage": "tromazo.db",
+    "operatorsAliases": false
+  },
+  "test": {
+    "database": "tromazo",
+    "dialect": "sqlite",
+    "storage": "tromazo.db",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "tromazo",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  }
+}
